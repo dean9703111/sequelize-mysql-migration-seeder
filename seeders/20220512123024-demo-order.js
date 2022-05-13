@@ -2,9 +2,6 @@
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    function getRandomInt(max) {
-      return Math.floor(Math.random() * max);
-    }
     // 每個使用者有 10 筆訂單（order）
     var orderArray = [];
 
