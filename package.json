@@ -1,0 +1,23 @@
+{
+  "name": "sequelize-mysql-migration-seeder",
+  "version": "1.0.0",
+  "description": "初探 sequelize，在 Node.js 快速建立 Migration、Seeder（資料庫為 MySQL）",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dean9703111/sequelize-mysql-migration-seeder.git"
+  },
+  "author": "Dean Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dean9703111/sequelize-mysql-migration-seeder/issues"
+  },
+  "homepage": "https://github.com/dean9703111/sequelize-mysql-migration-seeder#readme",
+  "dependencies": {
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
+  }
+}
