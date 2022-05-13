@@ -64,7 +64,7 @@ sequelize init
   },
 ```
 
-**STEP 3**：依照 `config/config.json` 建立 DB
+**STEP 3**：依照剛剛設定的 `config/config.json` 來建立 DB
 
 ```
 sequelize db:create
@@ -72,7 +72,7 @@ sequelize db:create
 
 ![image](img/create-db.png)
 
-> 如果想要移除該 DB，可透過指令`sequelize db:drop`
+> 如果想要移除該 DB，可透過指令：`sequelize db:drop`
 
 ---
 
@@ -151,7 +151,7 @@ sequelize seed:generate --name demo-item
 
 ![image](img/add-seeder.png)
 
-**STEP 2**：建立各自 Seeder 資料產生的邏輯，下面 order 舉例：
+**STEP 2**：建立各自 Seeder 資料產生的邏輯，下面以 order 舉例：
 
 ```js
 "use strict";
@@ -203,11 +203,11 @@ sequelize db:seed:all
 
 **STEP 4**：前往 DB ，確認資料是否有正確寫入：
 
-1. 建立 100 個使用者（user）。
+1. 建立 100 個使用者（users）。
    ![image](img/select-user-table.png)
-2. 建立 100 個使用者（user），每個使用者有 10 筆訂單（order），共 1000 筆資料。
+2. 建立 100 個使用者（users），每個使用者有 10 筆訂單（orders），共 1000 筆資料。
    ![image](img/select-order-table.png)
-3. 建立 100 個使用者（user），每個使用者有 10 筆訂單（order），每筆訂單下面有 10 個貨物（item），共 10000 筆資料。
+3. 建立 100 個使用者（users），每個使用者有 10 筆訂單（orders），每筆訂單下面有 10 個貨物（items），共 10000 筆資料。
    ![image](img/select-item-table.png)
 
 > 取消執行的 Seeder 可用如下指令：
