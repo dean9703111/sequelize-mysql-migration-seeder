@@ -44,7 +44,7 @@ npm install --save tedious # Microsoft SQL Server
 
 # 二、透過 Config 建立 DB
 
-**STEP 1**：用指令初始化相關設定擋
+**STEP 1**：用指令初始化相關設定檔
 
 ```
 sequelize init
@@ -88,7 +88,7 @@ sequelize model:generate --name order --attributes user_id:integer,total_price:i
 sequelize model:generate --name item --attributes order_id:integer,price:integer
 ```
 
-> 如果沒有填寫「attributes」會報錯誤。
+> 如果沒有填寫「attributes」的參數會無法建立 Table。
 > ![image](img/add-migration.png)
 
 **STEP 2**：前往 migrations 的資料夾，設計 Table 間的關聯性
@@ -129,7 +129,7 @@ sequelize db:migrate
 
 ![image](img/er-model.png)
 
-> 如果想要回朔 migration 可用如下指令：
+> 如果想要回溯 migration 可用如下指令：
 >
 > - 退一個版本：`sequelize db:migrate:undo`
 > - 退到初始狀態：`sequelize db:migrate:undo:all`
